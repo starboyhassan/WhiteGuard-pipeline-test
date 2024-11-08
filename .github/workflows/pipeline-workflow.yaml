@@ -22,7 +22,7 @@ jobs:
         env:
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
-          REMOTE_PATH: /home/ubuntu/pipeline_code/
+          REMOTE_PATH: /home/ubuntu/pipeline_code/WhiteGuard-pipeline-test/
         run: |
           ssh -o StrictHostKeyChecking=no $REMOTE_USER@$REMOTE_HOST << EOF
             cd $REMOTE_PATH
